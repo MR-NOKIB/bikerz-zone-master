@@ -8,6 +8,19 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/4b0c2d7bb0.js" crossorigin="anonymous"></script>
+    <style>
+      @media screen and (max-width: 576px) {
+        .custome-footer-link{
+          display: flex;
+          flex-direction: column;
+        }
+        .custom-ft-heading{
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="container">
@@ -106,11 +119,11 @@
     <!-- main -->
     <main class="container">
       <!-- Hot Bike Section  -->
-      <section class="text-start text-md-center mt-5">
+      <section class="text-start text-md-center mt-5 container">
         <h1>Hot Bike In This Year</h1>
         <p class="text-danger">Best bike in this year</p>
         <hr class="w-25 mx-auto border-danger">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 mt-3 px-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 mt-3">
           <div class="col">
             <img class="w-100" src="images/feature-bike.jpg" alt="">
           </div>
@@ -277,17 +290,15 @@
     </main>
 
     <!-- footer  -->
-    <footer class="bg-dark text-white p-5">
-    
-
-      <section class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6 d-flex flex-column justify-content-start">
-            <div class="d-flex gap-5 ms-3">
-              <h6>Download Now</h6>
-              <h6>License</h6>
+    <footer class="container-fluid bg-dark text-white pt-5 pb-4">
+      <section class="text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 col-lg-4 col-xl-5 mx-auto">
+            <div class="d-flex ms-3 custom-ft-heading">
+              <h5>Download Now</h5>
+              <h5>License</h5>
             </div>
-            <div class="d-flex">
+            <div class="d-flex custome-footer-link">
               <p><a href="" class="btn text-white">About</a></p>
               <p><a href="" class="btn text-white">Feateres</a></p>
               <p><a href="" class="btn text-white">Pricing</a></p>
@@ -299,10 +310,10 @@
               <p class="ms-3">© 2020 bike. All rights reserve</p>
             </div>
           </div>
-          <div class="col-12 col-sm-6">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
             <h4>Get The App</h4>
-            <div><i class="fa-brands fa-google-play"></i>Google Play store</div>
-            <div><i class="fa-brands fa-apple"></i>App Store</div>
+            <div><i class="fa-brands fa-google-play"></i><span>Google Play store</span></div>
+            <div><i class="fa-brands fa-apple"></i><span>App Store</span></div>
           </div>
         </div>
       </section>
